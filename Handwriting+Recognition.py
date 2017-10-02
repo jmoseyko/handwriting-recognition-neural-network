@@ -129,6 +129,11 @@ for record in training_data_list:
 
 # test the neural network
 
+# load the mnist test data CSV file into a list
+test_data_file = open("mnist_dataset/mnist_test.csv", 'r')
+test_data_list = test_data_file.readlines()
+test_data_file.close()
+
 # scorecard for how well the network performs, initially empty 
 scorecard = []
 
